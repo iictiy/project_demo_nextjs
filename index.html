@@ -10,11 +10,11 @@
       margin: 0;
     }
     /* Style the element from the outside */
-    /*
-  fancy-tabs {
-    margin-bottom: 32px;
-    --background-color: black;
-  }*/
+
+    /* fancy-tabs {
+      margin-bottom: 32px;
+      --background-color: black;
+    } */
   </style>
   <script src="https://unpkg.com/@webcomponents/custom-elements"></script>
   <body>
@@ -27,14 +27,14 @@
       <section>content panel 3</section>
     </fancy-tabs>
 
-    <fancy-tabs2>
+    <!-- <fancy-tabs2>
       <button slot="title">Tab 1</button>
       <button slot="title" selected>Tab 2</button>
       <button slot="title">Tab 3</button>
       <section>content panel 1</section>
       <section>content panel 2</section>
       <section>content panel 3</section>
-    </fancy-tabs2>
+    </fancy-tabs2> -->
 
     <!-- Using <a> instead of button still works! -->
     <!-- <fancy-tabs background>
@@ -49,11 +49,11 @@
     <script>
       (function () {
         "use strict";
-        document.querySelector("fancy-tabs").innerHTML = '<b>Hello shadow dom</b>'
+        // document.querySelector("fancy-tabs").innerHTML = '<b>Hello shadow dom</b>'
 
-    //    dic.attachShadow({mode: "open"})
-    //    dic.innerHTML = '<h1>Hello shadow dom</h1>'
-       return
+        // dic.attachShadow({mode: "open"})
+        // dic.innerHTML = '<h1>Hello shadow dom</h1>'
+        // return;
         // Feature detect
         if (!(window.customElements && document.body.attachShadow)) {
           document.querySelector("fancy-tabs").innerHTML =
